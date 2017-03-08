@@ -1,3 +1,4 @@
+var answer = 7
 $(document).ready(function(){
     $("#result").hide();
     $("#lost").hide();
@@ -5,7 +6,10 @@ $(document).ready(function(){
     $("#kush").hide();
     $("#soccer").hide();
     $("#tennis").hide();
-    $("button").click(function(){
+    $("#script").click(function(){
+        bob()
+    });
+    $("#ed").click(function(){
        $("#result").hide();
         $("#lost").hide();
         $("#foolish").hide();
@@ -15,15 +19,15 @@ $(document).ready(function(){
         var password=$("input").val();
         var number = parseInt(password);
         console.log(number);
-        if(number > 5){
+        if(number > answer){
             console.log(number)
             $("#kush").show();
         }
-        else if(number < 5){
+        else if(number < answer){
             console.log(number);
             $("#soccer").show();
         }
-        if(number === 5){
+        if(number === answer){
             console.log(number);
             $("#result").show();
         }    
@@ -31,9 +35,18 @@ $(document).ready(function(){
             console.log(number);
             $("#tennis").show();
         }
-        
+        $
     });
     $
         
         
     })
+function bob(){
+     $("#result").hide();
+    $("#lost").hide();
+    $("#foolish").hide();
+    $("#kush").hide();
+    $("#soccer").hide();
+    $("#tennis").hide();
+    $("input").val("");
+}
