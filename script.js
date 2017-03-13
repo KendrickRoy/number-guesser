@@ -1,4 +1,4 @@
-var answer = 7
+var answer = Math.floor((Math.random() * 100) + 1);
 $(document).ready(function(){
     $("#result").hide();
     $("#lost").hide();
@@ -31,11 +31,10 @@ $(document).ready(function(){
             console.log(number);
             $("#result").show();
         }    
-        else if(password !== number){
+        else if(isNaN(number)){
             console.log(number);
             $("#tennis").show();
         }
-        $
     });
     $
         
@@ -43,7 +42,8 @@ $(document).ready(function(){
     })
 function bob(){
      $("#result").hide();
-    $("#lost").hide();
+     answer =Math.floor((Math.random() * 10) + 1);
+   $("#lost").hide();
     $("#foolish").hide();
     $("#kush").hide();
     $("#soccer").hide();
